@@ -3,7 +3,7 @@ console.log(4 < 7);
 console.log(4 > 1);
 console.log(4 > 4);
 console.log(4 == 7);
-console.log("/////////////")
+
 // operadores de asignacion (= igual)(== igualdad)(=== igualdad estricta)
 
 console.log(3 == 3); //true
@@ -19,7 +19,7 @@ console.log(3 === '3'); // flase
 var a = 1;
 var b = 2;
 var c = (a = b);
-// cuando se usa '=' como ñ
+// cuando se usa '=' como operador de asignacion y este asigna el valor de abajo hacia arriba y de derecha a izquierda. por ende a termina siendo igual a 1.
 console.log(a) // 2
 console.log(b) // 2
 console.log(c) // 2
