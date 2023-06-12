@@ -45,6 +45,13 @@ var atuendos = {
 //console.log(atuendos.manos);
 
 //Braket-notation. hace referencia a el acceso y escritura de datos por medio de barra inclinadas.
-atuendos['pierna']= ['Bermudas', 'Pantalones']
+atuendos ['pierna'] = ['Bermudas', 'Pantalones']
+var comidas ={}
+var diferenciaDeNotaciones = function(propUno, propDos) {
+    comidas[propUno] = ['Frutas', 'Vegetales']
+    comidas[propDos] = ['Hamburguesas', "Papas fritas"]
+}
 
-console.log(atuendos)
+
+diferenciaDeNotaciones("saludables","noSaludables")
+console.log(comidas)
