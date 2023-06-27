@@ -11,7 +11,7 @@ var persona = {
 };
 
 //console.log(persona.edad);  
-
+ 
 //persona.nombre = "Martin"
 //console.log(persona.nombre)
 //persona.edad = 32
@@ -33,8 +33,8 @@ var misFunciones = {
     }
 }
 
-//misFunciones.saludar();
-//misFunciones.despedirse();
+// misFunciones.saludar();
+// misFunciones.despedirse();
 
 
 var atuendos = {
@@ -54,4 +54,15 @@ var diferenciaDeNotaciones = function(propUno, propDos) {
 
 
 diferenciaDeNotaciones("saludables","noSaludables")
-console.log(comidas)
+// console.log(comidas)
+
+/* METODOS Objetos Avanzados */
+
+/* hasOwnProperty() nos permitirá especificar un nombre, y verificar si este existe como una propiedad dentro de un objeto. En cada caso devolverá true o false. */
+var libros = {autor: 'Borges', genero: 'Policial', año: 1990};
+var tienePropiedad = libros.hasOwnProperty('nombre')
+console.log(tienePropiedad)
+
+/* Object.keys() devuelve todas las propiedades de un objeto guardadas en orden dentro de un arreglo. */
+var todasLasPropiedades = Object.keys(libros)
+console.log(todasLasPropiedades)
