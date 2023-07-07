@@ -60,9 +60,34 @@ diferenciaDeNotaciones("saludables","noSaludables")
 
 /* hasOwnProperty() nos permitirá especificar un nombre, y verificar si este existe como una propiedad dentro de un objeto. En cada caso devolverá true o false. */
 var libros = {autor: 'Borges', genero: 'Policial', año: 1990};
-var tienePropiedad = libros.hasOwnProperty('nombre')
-console.log(tienePropiedad)
+var tienePropiedad = libros.hasOwnProperty('año')
+// console.log(tienePropiedad)
 
 /* Object.keys() devuelve todas las propiedades de un objeto guardadas en orden dentro de un arreglo. */
 var todasLasPropiedades = Object.keys(libros)
-console.log(todasLasPropiedades)
+// console.log(todasLasPropiedades)
+
+//          bucle for in 
+
+var mundo = {continentes: 7, paises: 195,oceanos: 5}
+
+/* for (var prop in mundo) {
+    console.log('esta es la propiedad: ' + prop)
+    console.log('este es el valor: ' + mundo[prop])
+} */
+
+// la principal diferencia entre los bucles for y for in esta en el hecho de que el bucle for solo sirve para recorrer arreglos, y el bucle for in sirve solamente para recorrer objetos
+
+// OBJETO This (hace referencia a un contexto)
+
+var mascota = {
+    animal: 'perro', 
+    raza: 'Ovejero Aleman', 
+    amistoso: true,
+    dueño: 'Maria Lopez',
+    info: function() {
+        console.log('mi perro es un ' + this.raza)
+    }
+}
+
+mascota.info()
