@@ -1,0 +1,3 @@
+agregando el primer archivo para probar y aprender git
+
+saludos xd.
